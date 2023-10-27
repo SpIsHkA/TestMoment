@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Neue Machina';
+    font-weight: 700;
+    font-style: Bold;
+    src:
+        url('./font/NeueMachina-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: Bold;
+    src:
+        url('./font/NeueMachina-Bold.ttf') format('ttf');
+}
+
+body {
+    background: #EFEFEF;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2A67DD;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+}
+
+h1 {
+    font-family: Neue Machina;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+h2 {
+    font-family: Neue Machina;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0px;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0px;
+}
+
+h6 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.container {
+    margin: 35px auto;
+    margin-left: 18.28%;
+    max-width: 64.49%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 74px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--unnamed, #E6E6E6);
+}
+
+.header_fix {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 74px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--unnamed, #E6E6E6);
+}
+
+
+.logo {
+    margin-left: 18.28%;
+    margin-top: 13px;
+}
+
+.notification {
+    background-color: #E0FFA8;
+    width: 99%;
+    border-radius: 20px;
+}
+
+.notification_pos {
+    padding-left: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 43px;
+}
+
+.icon_close {
+    cursor: pointer;
+}
+
+.container_tests {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.tests {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.test {
+    cursor: pointer;
+    width: 282px;
+    height: 249px;
+    background-color: #FFF;
+    border-radius: 20px;
+    user-select: none;
+    transition: box-shadow 0.3s;
+}
+
+.content_test {
+    margin: 15px 15px 15px 15px;
+}
+
+.test:hover {
+    box-shadow: 0px 0px 20px 0px rgba(26, 26, 26, 0.15);
+}
+
+.text_test {
+    color: black;
+    transition: color 0.3s;
+}
+
+.test:hover .text_test {
+    color: #2A67DD; /* Изменяем цвет текста при наведении на myDiv */
+}
+
+.img_test {
+    pointer-events: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Здесь вы задаете цвет и прозрачность фона */
+    z-index: 9999; /* Большее значение z-index для затемнения фона */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    border-radius: 20px;
+    z-index: 10000;
+    position: fixed;
+}
+
+
+.popup_content {
+    margin-left: 101px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 47px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 101px;
+}
+
+.closePopup {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.result_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.popupImage {
+    width: 386px;
+    height: 261px;
+}
+---
+.notification {
+    background-color: #E0FFA8;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.closePopup {
+    cursor: pointer;
+}
+
+.footer {
+    border-radius: 50px 50px 0px 0px;
+    background-color: #FFF;
+    display: flex;
+    width: 100%;
+    height: 231px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer_container {
+    margin-left: 18.28%;
+}
